@@ -24,7 +24,7 @@ This paper proposes a design of hierarchical fuzzy inference tree (HFIT). An HFI
 }
 ```
 
-Cite Source Code
+Cite the source code as
 ```
 @misc{ojha2016,<br>
   author        = "Varun Ojha",
