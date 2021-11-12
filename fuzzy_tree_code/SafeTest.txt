@@ -1,0 +1,68 @@
+            /*	
+             int w = 0;
+             while(w<50)
+             {
+             System.out.print("\n\nNext Generation");
+             sortingPopulation(currentPopulation); 
+             int its = createNewPopulation(currentPopulation, newPopulation);
+             reducePopulation(m_PopulationSize,newPopulation);
+             deletePopulation(currentPopulation);
+             currentPopulation.addAll(0,newPopulation);
+             newPopulation.clear();
+             fitnessEvaluation(currentPopulation);
+             FNT bestTree = (FNT)findBestTree(currentPopulation);
+             //bestTree.printTree();
+				
+             double newFit = bestTree.getFitness();
+             System.out.print("\nBest Fit:"+bestFit+" New Fit:"+newFit);
+             if(newFit < bestFit){
+             bestFit = newFit;
+             System.out.println(" GP : new Best fitness: "+bestFit);
+             m_BestLocalTree = bestTree.copyTree();
+             m_BestLocalTree.printTree();
+             }			
+             w++;
+             }
+			
+             System.out.println("\nOptimizing FNT Structure...");//+m_BestLocalTree.getFitness()); 
+			 
+             //weights optimization by PSO		
+             m_BestWeightsTree = m_BestLocalTree;
+             m_BestWeightsTree = m_BestWeightsTree.copyTree();
+             m_BestWeightsTree.setWeightsOnly(weightsOnly);
+			
+             m_BestWeightsTree.printTree();
+             int particleDimension = m_BestWeightsTree.getParametersCount();
+             double[] m_BestWeights = m_BestWeightsTree.getParameters(particleDimension);
+             System.out.print("\n The paramters:\n");
+             for(int d=0;d<particleDimension;d++)
+             {
+             System.out.print(" "+m_BestWeights[d]);
+             }
+             System.out.print("\n Best GP Tree Fitnes:"+m_BestWeightsTree.getFitness()+" == ");
+             m_BestWeightsTree.setParameters(m_BestWeights);
+             System.out.print(getPSOfitness(m_BestWeights)+"==");
+             m_EvaluationFunction.testTrain(m_BestWeightsTree, "outputTtrain");
+             System.out.print("\n PSO optimization \n");
+			
+             PSO pso = new PSO();
+             pso.Init(particleDimension, m_ParticlesCount, this);
+             System.out.println("PSO optimization started, dimension: "+particleDimension);
+             double[] bestPosition = new  double[particleDimension];
+             bestPosition = pso.Compute(m_DesiredFitnessPSO, m_PrintStepPSO, m_MaxIterationsPSO,m_BestWeights);		
+	
+             // take best weights and set		
+             m_BestWeightsTree.setParameters(bestPosition);
+             fitnessEvaluation(m_BestWeightsTree);
+             m_BestWeightsTree.printTree();	
+             m_BestWeightsTree.printTreeFile();
+             //m_BestLocalTree.getFitness();
+			
+             System.out.print("\n"+m_BestWeightsTree.getFitness());
+             for(int d=0;d<particleDimension;d++)
+             {
+             System.out.print(" "+bestPosition[d]);
+             }
+			
+             m_BestGlobalTree = m_BestWeightsTree;
+             m_BestGlobalTree = m_BestGlobalTree.copyTree();	*/

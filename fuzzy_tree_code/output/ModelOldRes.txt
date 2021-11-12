@@ -1,0 +1,111 @@
+Person who conduct Experiment:
+Varun Kumar Ojha
+vkojha@ieee.org
+Write a title for the experiment
+2017/02/01 13:25:20
+The problem used for experment:
+%,Dataset_Name:,iris
+%,Total_Example:,120
+The parameter used for experment:
+#,Random_Seed:,1485952073427
+#,Scale_Low:,0.0
+#,Scale_High:,1.0
+#,Scaling:,true
+#,Suffling:,true
+#,Maximum_Genral_Iteration:,1
+#,Tree_Height:,5
+#,Tree_Arity:,4
+#,Tree_Node_Type:,0
+#,Tree_Node_Range:,0.0,1.0
+#,Tree_Edge_Range:,-1.0,1.0
+#,Optimize_Tree_parameters:,false
+#,GP_Population:,20
+#,gpELITISM:,2
+#,gpMUTATION_PROB:,0.2
+#,gpCROSSOVER_PROB:,0.8
+#,Tournament_Size:,2
+#,Maximum_Structure_Iteration:,50
+#,GP_Training_Model:,Single Objective
+#,Metaheuristic_Algorithm:,DE
+#,MH_Algorithm_Population:,50
+#,Maximum_Parameter_Iteration:,100
+#,Ensemble_Candidates:,1
+#,Ensemble_Diversity:,Nill
+#,Ensemble_Method_Used:,NillMethod
+#,Ensemble_Algorithm_Used:,ABC
+#,Ensemble_Algorithm_Iteration:,1000
+#,Ensemble_Algorithm_Population:,50
+#,Ensemble_Algorithm_Search_Min:,0.0
+#,Ensemble_Algorithm_Search_Max:,1.0
+#,Cross_Validation:,Manual_Partition
+#,Cross_Validation_Manual_Partition:,4
+#,Cross_Validation_Save_Pattern:,No
+#,Cross_Validation_External_Fold_Num:,10
+#,MH_Algorithm_Parms:,0.9,0.7,DE/rand-to-best/1/bin,
+#,MH_EN_Algorithm_Parms:,100,4,
+
+The results' Statistics: 
+OUTPUT 2 MODEL: Fitness, Size: 0: 0.01666666666666672, 7 Cross-Validation Result [ Training, Test ] 
+ Output 0  Model (0) {Fitness,SD]}  [{1.001E-13, 1.00000000005E-8}, {0.06666666666676675, 1.0000000000500034E-8}]
+ Output 1  Model (0) {Fitness,SD]}  [{0.18333333333343346, 1.0000000000500034E-8}, {0.33333333333343346, 1.0000000000499756E-8}]
+ Output 2  Model (0) {Fitness,SD]}  [{0.033333333333433426, 1.0000000000500034E-8}, {0.050000000000100145, 1.0000000000500034E-8}]
+#,Ensemble_Weights_Output_:,0,1.0
+#,Ensemble_Weights_Output_:,1,1.0
+#,Ensemble_Weights_Output_:,2,1.0
+
+  Training: Accuracy, Error Rate, Precision, Recall: 
+		0.92593, 0.07407, 0.88889,0.9067
+  Test    : RMSE, Correlation, R Squared: 
+ 		0.84615, 0.15385, 0.80222, 0.79167
+
+ Training Confusion Matrix: 
+13   0   0  | 13  
+ 5  17   0  | 22  
+ 0   1  18  | 19  
+----------------
+18  18  18  | 54  
+
+class 0: true positive 13  , false negative  0  , false positive  5  , true negative 36  
+       : accuracy: 0.90741  error rate: 0.09259  Precision: 0.72222 Recall: 1.00000
+class 1: true positive 17  , false negative  5  , false positive  1  , true negative 31  
+       : accuracy: 0.88889  error rate: 0.11111  Precision: 0.94444 Recall: 0.77273
+class 2: true positive 18  , false negative  1  , false positive  0  , true negative 35  
+       : accuracy: 0.98148  error rate: 0.01852  Precision: 1.00000 Recall: 0.94737
+
+Total : accuracy: 0.92593  error rate: 0.07407  Precision: 0.88889 Recall: 0.90670
+ Test Confusion Matrix: 
+16   0   0  | 16  
+ 9  10   1  | 20  
+ 0   2  14  | 16  
+----------------
+25  12  15  | 52  
+
+class 0: true positive 16  , false negative  0  , false positive  9  , true negative 27  
+       : accuracy: 0.82692  error rate: 0.17308  Precision: 0.64000 Recall: 1.00000
+class 1: true positive 10  , false negative 10  , false positive  2  , true negative 30  
+       : accuracy: 0.76923  error rate: 0.23077  Precision: 0.83333 Recall: 0.50000
+class 2: true positive 14  , false negative  2  , false positive  1  , true negative 35  
+       : accuracy: 0.94231  error rate: 0.05769  Precision: 0.93333 Recall: 0.87500
+
+Total : accuracy: 0.84615  error rate: 0.15385  Precision: 0.80222 Recall: 0.79167 Total Process Time:0.2 minutes 
+
+The selected features:
+
+For output 0 selected features are 4
+  0 Index:0 Name: SepalLength
+  1 Index:1 Name: SepalWidth
+  2 Index:2 Name: PetalLength
+  3 Index:3 Name: PetalWidth
+For output 1 selected features are 4
+  0 Index:0 Name: SepalLength
+  1 Index:1 Name: SepalWidth
+  2 Index:2 Name: PetalLength
+  3 Index:3 Name: PetalWidth
+For output 2 selected features are 3
+  0 Index:0 Name: SepalLength
+  1 Index:2 Name: PetalLength
+  2 Index:3 Name: PetalWidth
+%MODEL:,FIS
+
+
+

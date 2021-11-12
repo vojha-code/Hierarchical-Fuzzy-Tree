@@ -1,0 +1,55 @@
+       /*if (!trainingMode.equals("Single Objective")) {
+            int[] selectedIndividuals = FramesCall.selectIndividuals(mainPopulation, m_Ensemble_Candidates);
+            for (int i = 0; i < m_Ensemble_Candidates; i++) {
+                m_bstlclTA[i] = null;
+                m_bstlclTA[i] = mainPopulation[selectedIndividuals[i]];//m_BestLocalTree;//Ensure the first tree is the Best local tree
+                m_bstlclTA[i] = m_bstlclTA[i].copyTree();
+            }//for
+            return m_bstlclTA;
+        } else {
+            System.out.println(" Best Local Tree(s): ");
+            report = report + ("\n Best Local Tree(s): ");
+            double[] bestFitness = new double[m_Ensemble_Candidates];
+            int indexBest = 0;
+            m_bstlclTA[indexBest] = null;
+            m_bstlclTA[indexBest] = mainPopulation[0];//m_BestLocalTree;//Ensure the first tree is the Best local tree
+            m_bstlclTA[indexBest] = m_bstlclTA[indexBest].copyTree();
+            bestFitness[indexBest] = m_bstlclTA[indexBest].getFitness();
+            //System.out.println("  Tree " + indexBest + " : (" + m_bstlclTA[indexBest].getParametersCount() + ") Fit: " + bestStructure[indexBest] + " [" + m_bstlclTA[indexBest].size() + "]");
+            report = report + ("\n  Tree " + indexBest + " : (" + m_bstlclTA[indexBest].getParametersCount() + ") Fit: " + bestFitness[indexBest]);
+            indexBest++;
+            if (indexBest < m_Ensemble_Candidates && m_Ensemble_Diversity.equals("Structural")) {
+                for (Object currentPopulation1 : mainPopulation) {
+                    FNT tree = (FNT) currentPopulation1;
+                    boolean foundSimilar = false;
+                    for (int search = 0; search < indexBest; search++) {
+                        if (bestFitness[search] == tree.getFitness()) {
+                            foundSimilar = true;
+                            break;
+                        }//if
+                    }//for search
+                    if (!foundSimilar && indexBest < m_Ensemble_Candidates) {
+                        m_bstlclTA[indexBest] = null;
+                        m_bstlclTA[indexBest] = tree;
+                        m_bstlclTA[indexBest] = m_bstlclTA[indexBest].copyTree();
+                        bestFitness[indexBest] = m_bstlclTA[indexBest].getFitness();
+                        //System.out.println("  Tree " + indexBest + " : (" + m_bstlclTA[indexBest].getParametersCount() + ") Fit: " + bestStructure[indexBest]);
+                        report = report + ("\n  Tree " + indexBest + " : (" + m_bstlclTA[indexBest].getParametersCount() + ") Fit: " + bestFitness[indexBest]);
+                        indexBest++;
+                    }//if
+                }//for 
+            }//if
+            if (indexBest < m_Ensemble_Candidates && m_Ensemble_Diversity.equals("Structural")) {
+                //System.out.println("  No more distinct trea:  Copying random trees");
+                for (int fill = indexBest; fill < m_Ensemble_Candidates; fill++) {
+                    m_bstlclTA[fill] = null;
+                    m_bstlclTA[fill] = mainPopulation[m_Random.nextInt(m_PopulationSize - 1)];//add random tree
+                    m_bstlclTA[fill] = m_bstlclTA[fill].copyTree();
+                    bestFitness[fill] = m_bstlclTA[fill].getFitness();
+                    //System.out.println("  Tree " + fill + " : (" + m_bstlclTA[fill].getParametersCount() + ") Fit: " + bestStructure[fill]);
+                    report = report + ("\n  Tree " + fill + " : (" + m_bstlclTA[fill].getParametersCount() + ") Fit: " + bestFitness[fill]);
+                }//for
+            }//best possible distinct structure found
+            bestFitness = null;//dispose object bestStructure
+            return m_bstlclTA;
+        }//if */

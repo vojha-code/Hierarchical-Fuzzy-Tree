@@ -1,0 +1,62 @@
+Person who conduct Experiment:
+Varun Kumar Ojha
+Computer Science & Engineering
+vkojha@ieee.org
+Write a title for the experiment
+2015/03/04 17:35:33
+The problem used for experment:
+% Dataset Name  :iris
+% Problem  : Classification
+% Input Features: 4
+% Classes :3
+% Total Example:120
+The parameter used for experment:
+#,Random_Seed:,1425486953196
+#,Tree_Height:,5
+#,Tree_Arity:,4
+#,Tree_Node_Type:,Random_Selection
+#,GP_Population:,30
+#,MUTATION_PROB:,0.1
+#,CROSSOVER_PROB:,0.2
+#,ELITISM:,0.1
+#,Tournament_Size:,8
+#,Optimize_Tree_parameters:,Eadge_and_Nodes
+#,Metaheuristic_Algorithm:,Artificial_Bee_Colony,
+#,MH_Algorithm_Population:,50
+#,MH_Algorithm_Node_Range:,0.0,1.0
+#,MH_Algorithm_Edge_Range:,-1.0,1.0
+#,Ensemble_Candidates:,5
+#,Ensemble_Diversity:,Structural
+#,Ensemble_Method_Used:,Majority_Voting
+#,Maximum_Genral_Iteration:,1
+#,Maximum_Structure_Iteration:,50
+#,Maximum_Parameter_Iteration:,100
+#,Cross_Validation:,10_Fold
+
+The results' Statistics: 
+ Cross-Validation Result [ Training, Test ] 
+ Output 0  Model (0) {Fitness,Variance]}  [{0.025, 0.0}, {0.025, 0.015}]
+ Output 0  Model (1) {Fitness,Variance]}  [{0.025, 0.0}, {0.025, 0.015}]
+ Output 0  Model (2) {Fitness,Variance]}  [{0.025, 0.0}, {0.025, 0.015}]
+ Output 0  Model (3) {Fitness,Variance]}  [{0.025, 0.0}, {0.025, 0.015}]
+ Output 0  Model (4) {Fitness,Variance]}  [{0.02407, 0.0}, {0.03333, 0.017}]
+ Output 1  Model (0) {Fitness,Variance]}  [{0.07407, 0.001}, {0.1, 0.053}]
+ Output 1  Model (1) {Fitness,Variance]}  [{0.06944, 0.001}, {0.1, 0.081}]
+ Output 1  Model (2) {Fitness,Variance]}  [{0.06667, 0.0}, {0.06667, 0.025}]
+ Output 1  Model (3) {Fitness,Variance]}  [{0.08148, 0.0}, {0.10833, 0.042}]
+ Output 1  Model (4) {Fitness,Variance]}  [{0.08148, 0.0}, {0.10833, 0.042}]
+ Output 2  Model (0) {Fitness,Variance]}  [{0.03519, 0.0}, {0.05, 0.031}]
+ Output 2  Model (1) {Fitness,Variance]}  [{0.03148, 0.0}, {0.08333, 0.083}]
+ Output 2  Model (2) {Fitness,Variance]}  [{0.03148, 0.0}, {0.075, 0.062}]
+ Output 2  Model (3) {Fitness,Variance]}  [{0.02407, 0.0}, {0.04167, 0.045}]
+ Output 2  Model (4) {Fitness,Variance]}  [{0.03333, 0.0}, {0.04167, 0.031}]
+#,Ensemble_Weights Output :0,1.0,1.0,1.0,1.0,1.0
+#,Ensemble_Weights Output :1,1.0,1.0,1.0,1.0,1.0
+#,Ensemble_Weights Output :2,1.0,1.0,1.0,1.0,1.0
+                  [ Training, Test ]      
+ Accuracy        :[ 0.9703704, 0.9590643 ] 
+ Error Rate      :[ 0.03, 0.041 ] 
+ Precision       :[ 0.957, 0.94 ] 
+ Recall          :[ 0.958, 0.941 ] 
+ Total Process Time:4.14 minutes
+The selected features:
